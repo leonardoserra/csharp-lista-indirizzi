@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_lista_indirizzi
 {
-    internal class Indirizzo
+    public class Address
     {
         public string Name{ get; private set; }
         public string Surname{ get; private set; }
@@ -15,7 +15,7 @@ namespace csharp_lista_indirizzi
         public string Province { get; private set; }
         public string ZipCode { get; private set; }
 
-        public Indirizzo(string name, string surname, string street, string city, string province, string zipCode)
+        public Address(string name, string surname, string street, string city, string province, string zipCode)
         {
             this.Name = name;
             this.Surname = surname; 

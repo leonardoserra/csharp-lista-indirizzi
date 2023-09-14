@@ -19,7 +19,7 @@
                         addressList.Add(AddressFileReader.AddressReader(addressLine));
 
                     }catch (Exception ex) { 
-                        Console.WriteLine("errore con il file.");
+                        Console.WriteLine("Indirizzo non valido.");
                     }
                     
                     

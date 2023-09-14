@@ -17,6 +17,14 @@ namespace csharp_lista_indirizzi
             }
             else
             {
+                for (int i = 0; i < addressFields.Length; i++)
+                {
+                    if (addressFields[i] == "")
+                    {
+                        addressFields[i] = "default";
+
+                    }
+                }
                 string name = addressFields[0];
                 string surname = addressFields[1];
                 string street = addressFields[2];
@@ -26,8 +34,9 @@ namespace csharp_lista_indirizzi
                 Address address = new Address(name, surname, street, city, province, zipCode);
                 Console.WriteLine(address);
                 return address;
+                    
+                }
             }
-            
         }
     }
-}
+

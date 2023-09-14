@@ -8,10 +8,26 @@ namespace csharp_lista_indirizzi
 {
     public class AddressFileReader
     {
-        public static Address AddressReader(StreamReader streamedFile)
+        public static Address AddressReader(string addressLine)
         {
-
-            return null;
+            string[] addressFields = addressLine.Split(",");
+            if (addressFields.Length < 6)
+            {
+                throw new Exception("Indirizzo non valido.");
+            }
+            else
+            {
+                string name = addressFields[0];
+                string surname = addressFields[1];
+                string street = addressFields[2];
+                string city = addressFields[3];
+                string province = addressFields[4];
+                string zipCode = addressFields[5];
+                Address address = new Address(name, surname, street, city, province, zipCode);
+                Console.WriteLine(address);
+                return address;
+            }
+            
         }
     }
 }

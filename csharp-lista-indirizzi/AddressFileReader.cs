@@ -8,10 +8,10 @@ namespace csharp_lista_indirizzi
 {
     public class AddressFileReader
     {
-        public static Address AddressReader(string addressTextLine)
+        public static Address AddressReader(StreamReader streamedFile)
         {
 
-            
+            return null;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace csharp_lista_indirizzi
         public static Address AddressReader(string addressLine)
         {
             string[] addressFields = addressLine.Split(",");
-            if (addressFields.Length < 6)
+            if (addressFields.Length != 6)
             {
                 throw new Exception("Indirizzo non valido.\n");
             }

@@ -21,7 +21,7 @@ namespace csharp_lista_indirizzi
                 {
                     if (addressFields[i] == "")
                     {
-                        addressFields[i] = "default";
+                        addressFields[i] = "DATI_MANCANTI";
 
                     }
                 }
